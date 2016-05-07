@@ -1,0 +1,82 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{german}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{eurosym}
+\usepackage{amssymb, amsmath}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{wrapfig} % Paket zur Positionierung einbinden
+\usepackage{graphicx} % Paket zur Verwendung von .jpg Bildern
+\usepackage{german}
+\usepackage[all]{xy}	% Markovketten zeichnen
+\usepackage{cancel}
+\usepackage{mathrsfs}	% Schrift: L-Norm
+\usepackage{upgreek}	% Schrift: Diracmass
+\usepackage{hyperref}
+\usepackage{wasysym}
+\usepackage{pdfpages}
+\usepackage{eurosym}
+
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+
+
+
+\numberwithin{figure}{section}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\geometry{letterpaper}
+\parindent0pt
+
+
+
+%aus "proof" wird "Beweis"
+
+
+\newtheorem{Lemma}{Lemma}
+\newtheorem{Theorem}[Lemma]{Theorem}
+\newtheorem{Corollary}[Lemma]{Korollar}
+\newtheorem{Definition}[Lemma]{Definition}
+\newtheorem{Satz}[Lemma]{Satz}
+\newtheorem{Proposition}[Lemma]{Proposition}
+
+
+
+
+\def \unabh{\perp\!\!\!\perp}
+\def \abh{\cancel{\perp\!\!\!\perp}}
+
+\def\P {\mathbb{P}}
+\def\E {\mathbb{E}}
+\def\( {\big(}
+\def\) {\big)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\tableofcontents
+\section{Aja}
+\include{Aja}
+\section{Vlad}
+\include{Vlad}
+\section{Tables}
+\include{Table1}
+\include{Table2}
+%\include{Table3}
+\include{Table3.2}
+\include{Table4}
+\include{Table5}
+\include{Table6}
+\include{Table7}
+\include{Table8}
+%\include{TestTable}
+\include{References}
+\end{document}
